@@ -160,6 +160,9 @@ body{
   .card .back-view img{
     max-width: 40px;
   }
+  .Title{
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -172,6 +175,9 @@ body{
   }
   .card .back-view img{
     max-width: 35px;
+  }
+  .Title{
+    font-size: 10px;
   }
 }
 
