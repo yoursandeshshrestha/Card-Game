@@ -2,6 +2,9 @@ const cards = document.querySelectorAll(".card"),
 timeTag = document.querySelector(".time b"),
 flipsTag = document.querySelector(".flips b"),
 refreshBtn = document.querySelector(".details button");
+const game = document.querySelector(".wrapper");
+const gameResult = document.querySelector(".gameResult")
+const replayBtn = document.querySelector(".replay")
 
 let maxTime = 60;
 let timeLeft = maxTime;
@@ -13,6 +16,8 @@ let cardOne, cardTwo, timer;
 
 function initTimer() {
     if(timeLeft <= 0) {
+        game.style.display = "none"
+        gameResult.style.display = "flex"
         return clearInterval(timer);
     }
     timeLeft--;
@@ -80,7 +85,7 @@ function shuffleCard() {
         card.classList.remove("flip");
         let imgTag = card.querySelector(".back-view img");
         setTimeout(() => {
-            imgTag.src = `Asset/img-${arr[index]}.png`;
+            imgTag.src = `../Asset/img-${arr[index]}.png`;
         }, 500);
         card.addEventListener("click", flipCard);
     });
@@ -88,8 +93,17 @@ function shuffleCard() {
 
 shuffleCard();
 
+
 refreshBtn.addEventListener("click", shuffleCard);
 
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
+
+function handleReplay() {
+    shuffleCard();
+    game.style.display = "block"
+    gameResult.style.display = "none"
+}
+
+replayBtn.addEventListener("click", handleReplay);

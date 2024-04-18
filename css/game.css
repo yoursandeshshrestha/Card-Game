@@ -15,7 +15,7 @@ body{
   justify-content: center;
   min-height: 100vh;
   text-align: center;
-  background: #6563FF;
+  background: #629CFF;
 }
 
 .Title{
@@ -179,10 +179,51 @@ body{
   .Title{
     font-size: 10px;
   }
+  .flips{
+    display: none;
+  }
 }
 
 /* New Features */
 
 p{
   font-size: 20px;
+}
+
+.wrapper{
+  /* display: none; */
+}
+
+.gameResult{
+  width: auto;
+  height: auto;
+  gap: 30px;
+  border-radius: 10px;
+  padding: 40px 80px;
+  background-color: white;
+  /* display: flex; */
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  display: none;
+}
+
+.gameResult button{
+  cursor: pointer;
+  font-size: 14px;
+  color: #6563ff;
+  border-radius: 4px;
+  padding: 4px 11px;
+  background: #fff;
+  border: 2px solid #6563ff;
+  transition: 0.3s ease;
+}
+
+.gameResult p{
+  user-select: none;
+}
+
+.gameResult button:hover{
+  color: #fff;
+  background: #6563ff;
 }
