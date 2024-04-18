@@ -1,11 +1,13 @@
 /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
 body{
   display: flex;
   align-items: center;
@@ -13,13 +15,19 @@ body{
   min-height: 100vh;
   background: #6563FF;
 }
+
+::selection{
+  color: #fff;
+  background-color: #6563FF;
+}
+
 .wrapper{
   padding: 25px;
   border-radius: 10px;
   background: #F8F8F8;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-.cards, .card, .view{
+.cards, .card, .view, .details, p{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,13 +75,14 @@ body{
     transform: translateX(8px);
   }
 }
-.card .view{
+.cards .card .view{
   width: 100%;
   height: 100%;
   position: absolute;
   border-radius: 7px;
   background: #fff;
   pointer-events: none;
+  user-select: none;
   backface-visibility: hidden;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   transition: transform 0.25s linear;
@@ -93,6 +102,43 @@ body{
 .card.flip .front-view{
   transform: rotateY(180deg);
 }
+
+.details{
+  width: 100%;
+  margin-top: 15px;
+  padding: 0 20px;
+  border-radius: 7px;
+  background-color: #fff;
+  /* height: calc(100% / 4 - 30px); */
+  height: 60px;
+  justify-content: space-between;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details p span{
+  margin-left: 8px;
+}
+
+.details p b{
+  font-weight: 500;
+}
+
+.details button{
+  cursor: pointer;
+  font-size: 14px;
+  color: #6563ff;
+  border-radius: 4px;
+  padding: 4px 11px;
+  background: #fff;
+  border: 2px solid #6563ff;
+  transition: 0.3s ease;
+}
+
+.details button:hover{
+  color: #fff;
+  background: #6563ff;
+}
+
 
 @media screen and (max-width: 700px) {
   .cards{
@@ -118,4 +164,10 @@ body{
   .card .back-view img{
     max-width: 35px;
   }
+}
+
+/* New Features */
+
+p{
+  font-size: 20px;
 }
