@@ -6,7 +6,7 @@ const game = document.querySelector(".wrapper");
 const gameResult = document.querySelector(".gameResult")
 const replayBtn = document.querySelector(".replay")
 
-let maxTime = 30;
+let maxTime = 2;
 let timeLeft = maxTime;
 let flips = 0;
 let matchedCard = 0;
