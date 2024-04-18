@@ -6,7 +6,7 @@ const game = document.querySelector(".wrapper");
 const gameResult = document.querySelector(".gameResult")
 const replayBtn = document.querySelector(".replay")
 
-let maxTime = 2;
+let maxTime = 30;
 let timeLeft = maxTime;
 let flips = 0;
 let matchedCard = 0;
@@ -100,10 +100,40 @@ cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
 
+const homePage = document.querySelector('.container');
+const homeBtn = document.querySelector(".homeBtn");
+const PlayGameBtn = document.querySelector(".playGameBTn");
+
 function handleReplay() {
     shuffleCard();
-    game.style.display = "block"
-    gameResult.style.display = "none"
+    game.style.display = "block";
+    gameResult.style.display = "none";
+    homePage.style.display = "none";
+}
+
+function GoHomePage(){
+    game.style.display = "none";
+    gameResult.style.display = "none";
+    homePage.style.display = "flex";
+}
+
+function GoGame(){
+    shuffleCard();
+    game.style.display = "block";
+    gameResult.style.display = "none";
+    homePage.style.display = "none";
 }
 
 replayBtn.addEventListener("click", handleReplay);
+homeBtn.addEventListener("click", GoHomePage);
+PlayGameBtn.addEventListener("click", GoGame);
+
+// =========== Home =========== //
+
+let image = document.getElementById("image");
+let images = ['Asset/img-1.png', 'Asset/img-2.png', 'Asset/img-3.png', 'Asset/img-4.png', 'Asset/img-5.png', 'Asset/img-6.png', 'Asset/img-7.png', 'Asset/img-8.png'];
+
+setInterval(() => {
+    let random = Math.floor(Math.random() * 8); 
+    image.src = images[random];
+}, 1500);

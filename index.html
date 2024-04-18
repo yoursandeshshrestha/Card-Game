@@ -3,30 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Remember & Reveal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Asset/img-5.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+    <!-------------- GAME ------------------->
+    <div class="wrapper">
+        <div class="Title">
+            <h1>"Remember & Reveal"</h1>
+        </div>
+        <ul class="cards">
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-1.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src=".../Asset/img-2.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-3.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-5.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-6.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-7.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-8.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-1.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-2.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-3.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-5.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-6.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-7.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <span class="material-icons">question_mark</span>
+                </div>
+                <div class="view back-view">
+                    <img src="../Asset/img-8.png" alt="card-img">
+                </div>
+            </li>
+        </ul>
+        <div class="details">
+            <p class="time">Time: <span><b>30</b>s</span></p>
+            <p class="flips">Flips: <span><b>0</b></span></p>
+            <button>New Game</button>
+        </div>
+    </div>
+    <!-------------- GAME END ------------------->
+
+    <!-------------- Result ------------------->
+    <div class="gameResult">
+        <img src="Asset/img-5.png" alt="">
+        <p>"You lose"</p>
+        <div class="ResultBtn">
+            <button class="replay">Replay</button>
+            <button class="homeBtn">Home</button>
+        </div>
+    </div>
+    <!-------------- Result End ------------------->
+
+
+    <!-------------- home ------------------->
     <div class="container">
         <div class="imagediv">
-            <img id="image" src="Asset/img-1.png">
+            <img id="image" src="">
         </div>
-        <h2>Memory Game</h2>
+        <h2><span>"Remember & Reveal"</span> <br> The Memory Challenge Game</h2>
         <div class="buttons">
-            <a href="pages/game.html"><button class="easy">Play Game</button></a>
-            <!-- <button class="easy">Easy Mode</button>
-            <button class="hard">Hard Mode</button> -->
+            <button class="playGameBTn">Play Game</button>
         </div>
-        <p><a href="http://sandeshlinks.vercel.app" target="_blank">Made with love by Sandesh Shrestha</a></p>
+        <p><a href="https://www.linkedin.com/in/sandesh-shrestha-b829572b0/" target="_blank"><i>Made with love by Sandesh Shrestha</i></a></p>
     </div>
-    <script>
-        let image = document.getElementById("image");
-        let images = ['../Asset/img-1.png', '../Asset/img-2.png', '../Asset/img-3.png', '../Asset/img-4.png', '../Asset/img-5.png', '../Asset/img-6.png', '../Asset/img-7.png', '../Asset/img-8.png'];
+    <!-------------- home END ------------------->
 
-        setInterval(() => {
-        let random = Math.floor(Math.random() * images.length); 
-        image.src = images[random];
-        }, 1500);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
