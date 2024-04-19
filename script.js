@@ -49,7 +49,7 @@ function matchCards(img1, img2) {
     if(img1 === img2) {
         matchedCard++;
         if(matchedCard == 8 && timeLeft > 0) {
-            resultdisplay.innerText = "Congratulation, You Won";
+            resultdisplay.innerText = `"You Won"`;
             game.style.display = "none";
             gameResult.style.display = "flex";
             return clearInterval(timer);
