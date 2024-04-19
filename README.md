@@ -1,36 +1,40 @@
-## Remeber & Reveal
+## Remember & Reveal (The Memory Challenge Game)
 
-A remeber and reveal is a card game, built to play when u wanna relax yourself from the daily noise. This is a singleplayer game, which require a good iq level to complete.
+Remember & Reveal is a card game designed to help you unwind from the daily noise. It's a single-player game that requires a sharp intellect to conquer.
 
-## How to play 
+## How to Play
 
-There will be 16 cards, 2 similar and u have to find the matching cards in 30sec to beat this game.
-- If you beat the game, the result shows "You won"
-- If you lose the game, the result shows "You lose"
-It's that simple, but wining this game might require good iq
+The game consists of 16 cards, each with a matching pair. Your task is to find all the matching pairs within 30 seconds to win the game.
 
-## Technologies ⚡
+- If you successfully match all the cards, you'll see "You won" as the result.
+- If you fail to match all the cards within the time limit, you'll see "You lose".
 
-- `CSS`
-- `HTMl`
-- `Javascript`
+It's that simple, but winning this game may require a good IQ!
 
-## Idea 💡
+## Technologies Used ⚡
 
-I played a alot of mind realted game in my childhood, and after learning `Javascript` i was curious on how to built the game game using my development knowledge and after alot of try and fail, i finally completed my game on 19 April.
+- CSS
+- HTML
+- JavaScript
 
-## How Can It Be Improved?
+## Inspiration 💡
 
-The project could be improved by adding sound effects and background music.
+Having played many mind-related games during my childhood, I became curious about building one using my development skills. After numerous attempts and failures, I finally completed the game on April 19th.
+
+## Potential Improvements
+
+Enhancements such as adding sound effects and background music could elevate the gaming experience.
 
 ## Running the Project
 
 To run the project in your local environment, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Open html file using Live server and you are good to go
+2. Open the HTML file using a Live Server extension, and you're ready to play!
 
 ## 📸 - Demo Images
 
-<img src='https://github.com/yoursandeshshrestha/tic-tac-toe/blob/main/asset/12.04.2024_23.12.13_REC.png' width="100%"/>
-
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/yoursandeshshrestha/card-Game/blob/main/Asset/demo%20images%20for%20github.png" alt="Demo Image 1" style="width: 30%; margin-right: 10px;">
+  <img src="https://github.com/yoursandeshshrestha/card-Game/blob/main/Asset/demo%20image%202.png" alt="Demo Image 2" style="width: 30%;">
+</div>
