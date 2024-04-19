@@ -19,7 +19,7 @@ body{
 }
 
 .Title{
-  color: #ffffffb9;
+  color: #282727b9;
   margin-bottom: 10px;
 }
 
@@ -27,11 +27,7 @@ body{
   display: none;
   padding: 25px;
   border-radius: 16px;
-  background: rgba(208, 208, 208, 0.075);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(5px);
+  background: #ecf9ff;
 }
 
 .cards, .card, .view, .details, p{
@@ -41,7 +37,7 @@ body{
 }
 
 .cards .card .view span{
-  color: white;
+  color: rgb(77, 74, 74);
   font-size: 40px;
 }
 
@@ -89,18 +85,13 @@ body{
   width: 100%;
   height: 100%;
   position: absolute;
-  border-radius: 7px;
   pointer-events: none;
   user-select: none;
   backface-visibility: hidden;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   transition: transform 0.25s linear;
-  background: rgba( 255, 255, 255, 0.05 );
+  background: #ecf9ff;
   box-shadow: 0 8px 32px 0 rgba(124, 124, 124, 0.232);
-  backdrop-filter: blur( 4.5px );
-  -webkit-backdrop-filter: blur( 4.5px );
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card .front-view img{
@@ -137,12 +128,12 @@ body{
   height: 60px;
   justify-content: space-between;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  color: white;
+  color: rgb(22, 22, 22);
 }
 
 .details p span{
   margin-left: 8px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .details p b{
@@ -152,7 +143,7 @@ body{
 .details button{
   cursor: pointer;
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
   border-radius: 4px;
   padding: 4px 11px;
   transition: 0.3s ease;
@@ -164,7 +155,7 @@ body{
 }
 
 .details button:hover{
-  color: #fff;
+  color: #000000;
   background: rgba(255, 255, 255, 0.275);
 }
 
@@ -285,18 +276,6 @@ a{
 
 /* <------- Home Page Ends Here -----------> */
 
-/* .container{
-  display: none;
-}
-
-.wrapper{
-  display: none;
-}
-
-.gameResult{
-  display: flex;
-} */
-
 /* <------------- Media Query --------------> */
 
 @media screen and (max-width: 700px) {
@@ -340,4 +319,19 @@ a{
   .flips{
     display: none;
   }
+}
+
+/* <------------- Media Query END --------------> */
+
+
+.container{
+  display: none;
+}
+
+.wrapper{
+  display: block;
+}
+
+.gameResult{
+  display: none;
 }
