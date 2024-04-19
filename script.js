@@ -47,7 +47,7 @@ function flipCard({target: clickedCard}) {
 function matchCards(img1, img2) {
     if(img1 === img2) {
         matchedCard++;
-        if(matchedCard == 6 && timeLeft > 0) {
+        if(matchedCard == 8 && timeLeft > 0) {
             return clearInterval(timer);
         }
         cardOne.removeEventListener("click", flipCard);
@@ -127,8 +127,6 @@ function GoGame(){
 replayBtn.addEventListener("click", handleReplay);
 homeBtn.addEventListener("click", GoHomePage);
 PlayGameBtn.addEventListener("click", GoGame);
-
-// =========== Home =========== //
 
 let image = document.getElementById("image");
 let images = ['Asset/img-1.png', 'Asset/img-2.png', 'Asset/img-3.png', 'Asset/img-4.png', 'Asset/img-5.png', 'Asset/img-6.png', 'Asset/img-7.png', 'Asset/img-8.png'];
